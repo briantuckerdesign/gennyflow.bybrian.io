@@ -48,7 +48,7 @@ a:hover {
   height: 100dvh;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 2rem;
   display: flex;
@@ -109,6 +109,96 @@ a:hover {
 
 .form-embed {
   text-align: left;
+}
+
+.test_1 {
+  width: 400px;
+  height: 500px;
+  background-color: #8d1515;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  display: flex;
+}
+
+.body {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: wrap;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.test-1-heading {
+  color: #fff;
+}
+
+.test_2 {
+  width: 400px;
+  height: 500px;
+  background-color: #8d1515;
+  background-image: linear-gradient(rgba(0, 38, 255, .69), red), url('../images/favicon.png');
+  background-position: 0 0, 0 0;
+  background-size: auto, 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 19px;
+  display: flex;
+  overflow: hidden;
+}
+
+.test-2-heading {
+  color: #fff;
+  word-break: break-all;
+  font-family: Merriweather, serif;
+  font-size: 8rem;
+  font-weight: 900;
+}
+
+.test_3 {
+  width: 400px;
+  height: 500px;
+  background-color: #7d158d;
+  background-image: radial-gradient(circle at 50% 100%, #fff200, rgba(0, 0, 0, 0) 89%), radial-gradient(circle at 0 0, #0fe, rgba(255, 255, 255, 0) 53%), radial-gradient(circle, #000, rgba(255, 255, 255, 0) 82%);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px;
+  display: flex;
+}
+
+.test_3-heading {
+  color: #fff;
+  text-shadow: 0 1px 7px #1934ff;
+}
+
+.test_4-heading {
+  color: #fff;
+  font-family: Vollkorn, serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.test_4 {
+  width: 400px;
+  height: 500px;
+  filter: brightness(72%) contrast(110%) hue-rotate(180deg) saturate(200%) blur(6px);
+  background-image: url('../images/favicon-1.png');
+  background-position: 100%;
+  background-size: 128px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
